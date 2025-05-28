@@ -60,11 +60,49 @@ a {
   color: #0aa0fa;
 }
 
-footer {
+/* footer {
   text-align: center;
   padding: 1rem;
   background-color: #111;
   color: #fff;
+} */
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #222;
+  border-top: 1px solid #007BFF;
+}
+
+footer h3 {
+  color: #007BFF;
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.social-links a:hover img {
+  filter: brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(1352%) hue-rotate(200deg) brightness(119%) contrast(119%);
+}
+
+.social-links img {
+  width: 28px;
+  height: 28px;
+  transition: filter 0.3s ease;
+  /* Add grey filter for default state */
+  filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(95%) contrast(85%);
 }
 
 html {
