@@ -135,6 +135,30 @@ html {
   z-index: 1001;
 }
 
+/* Add these styles for hamburger spans */
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger span:nth-child(3) {
+  bottom: 0;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .hamburger {
@@ -144,7 +168,7 @@ html {
   .nav-links {
     position: fixed;
     top: 0;
-    right: -250px;
+    right: -100%; /* Change from -250px to -100% to ensure it's completely off screen */
     height: 100vh;
     width: 250px;
     background: #0aa0fa;
@@ -153,7 +177,8 @@ html {
     gap: 20px;
     transition: right 0.3s ease-in-out;
     z-index: 1000;
-    display: flex; /* Always keep flex display */
+    display: flex;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.2); /* Add shadow for better visibility */
   }
 
   .nav-links.open {
