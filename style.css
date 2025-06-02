@@ -61,14 +61,14 @@ a {
 
 footer {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 0.5rem 1rem;
   background-color: #222;
   border-top: 1px solid #0aa0fa;
 }
 
 footer h3 {
   color: #0aa0fa;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .social-links {
@@ -157,21 +157,6 @@ html {
 
 .hamburger span:nth-child(3) {
   bottom: 0;
-}
-
-/* Hamburger animation styles */
-.hamburger.open span:nth-child(1) {
-  top: 50%;
-  transform: translateY(-50%) rotate(45deg);
-}
-
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.open span:nth-child(3) {
-  bottom: 50%;
-  transform: translateY(50%) rotate(-45deg);
 }
 
 /* Responsive styles */
