@@ -18,13 +18,19 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
   color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ffffff;
 }
 
 .logo img {
   height: 60px;
-  width: auto;
+  width: 60px;
   vertical-align: middle;
-  background-color: #ffffff;
+  object-fit: contain;
 }
 
 nav a {
