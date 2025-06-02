@@ -262,7 +262,7 @@ html {
   }
   
   .portrait {
-    width: 70vw; /* 70% of viewport width */
+    width: 85vw; /* 85% of viewport width */
     height: auto;
   }
 }
