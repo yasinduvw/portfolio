@@ -78,6 +78,7 @@ footer h3 {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .social-links a {
