@@ -103,14 +103,26 @@ html {
 
 .name {
   flex-grow: 1;
-  text-align: center;
+  text-align: left;
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  padding-left: 1rem;
 }
 
+/* Base styles for nav-links (desktop) */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Hamburger button default state */
 .hamburger {
-  display: block;  /* Changed from 'none' to 'block' */
+  display: none;  /* Hide by default on desktop */
   background: transparent;
   border: none;
   cursor: pointer;
@@ -121,30 +133,16 @@ html {
   z-index: 1001;
 }
 
-.hamburger span {
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  background-color: #fff;  /* White color for the lines */
-  border-radius: 2px;
-  opacity: 1;
-  left: 0;
-  transform: rotate(0deg);
-  transition: .25s ease-in-out;
-}
-
-/* Position the three lines */
-.hamburger span:nth-child(1) { top: 0; }
-.hamburger span:nth-child(2) { top: 10px; }
-.hamburger span:nth-child(3) { top: 20px; }
-
 /* Responsive styles */
 @media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show only on mobile */
+  }
+
   .nav-links {
     position: fixed;
     top: 0;
-    right: -250px; /* Start off-screen */
+    right: -250px;
     height: 100vh;
     width: 250px;
     background: #0aa0fa;
@@ -153,68 +151,11 @@ html {
     gap: 20px;
     transition: right 0.3s ease-in-out;
     z-index: 1000;
+    display: flex; /* Always keep flex display */
   }
 
   .nav-links.open {
-    right: 0; /* Slide in when open */
-  }
-
-  .nav-links a {
-    display: block;
-    padding: 10px 0;
-    color: white;
-  }
-
-  .hamburger {
-    display: block;
-    z-index: 1001;
-  }
-
-  header {
-    position: relative;
-    flex-wrap: wrap;
-  }
-
-  .name {
-    font-size: 1.2rem;
-    margin-left: 0.5rem;
-  }
-}
-
-/* Hamburger animation when open */
-.hamburger.open span:nth-child(1) {
-  transform: translateY(10px) rotate(45deg);
-}
-
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.open span:nth-child(3) {
-  transform: translateY(-10px) rotate(-45deg);
-}
-
-/* Ensure the nav menu is properly hidden by default */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    position: fixed;
-    top: 0;
     right: 0;
-    height: 100vh;
-    width: 250px;
-    background: #0aa0fa;
-    padding: 80px 20px 20px;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .nav-links.open {
-    display: flex;
   }
 
   .nav-links a {
