@@ -103,14 +103,15 @@ html {
 
 .name {
   flex-grow: 1;
-  text-align: left;
+  text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
   padding-left: 1rem;
+}
+
+.name span {
+  display: inline; /* Keep spans inline by default for desktop */
 }
 
 /* Base styles for nav-links (desktop) */
@@ -161,5 +162,15 @@ html {
   .nav-links a {
     display: block;
     padding: 10px 0;
+  }
+
+  .name {
+    flex-direction: column;
+    display: flex;
+    line-height: 1.2;
+  }
+
+  .name span {
+    display: block; /* Stack spans vertically on mobile */
   }
 }
