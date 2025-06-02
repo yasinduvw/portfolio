@@ -108,10 +108,11 @@ html {
   font-weight: bold;
   color: white;
   padding-left: 1rem;
+  display: block; /* Changed from flex */
 }
 
 .name span {
-  display: inline; /* Keep spans inline by default for desktop */
+  display: inline; /* Default for desktop */
 }
 
 /* Base styles for nav-links (desktop) */
@@ -165,12 +166,16 @@ html {
   }
 
   .name {
-    flex-direction: column;
+    text-align: center;
     display: flex;
-    line-height: 1.2;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.4;
+    padding-left: 0;
   }
 
   .name span {
-    display: block; /* Stack spans vertically on mobile */
+    display: block;
+    width: 100%;
   }
 }
