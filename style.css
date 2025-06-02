@@ -66,6 +66,38 @@ a {
   color: #0aa0fa;
 }
 
+/* CV Button Styles */
+.cv-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #0aa0fa;
+  color: white;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border: 2px solid transparent;
+}
+
+.cv-button:hover {
+  background-color: #0885d3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.cv-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+.cv-button .contact-icon {
+  margin-right: 8px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
 footer {
   text-align: center;
   padding: 0.5rem 1rem;
