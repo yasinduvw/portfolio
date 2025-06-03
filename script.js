@@ -33,4 +33,32 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Highlight the active nav link based on scroll position
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  const updateActiveLink = () => {
+    let currentSection = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 80; // Adjust for fixed header height
+      const sectionHeight = section.offsetHeight;
+
+      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+        currentSection = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href").substring(1) === currentSection) {
+        link.classList.add("active");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", updateActiveLink);
+});
+
 console.log("Welcome to my portfolio!");
