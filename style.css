@@ -262,7 +262,7 @@ html {
 
 /* Education block styles */
 .education-block {
-  border: 2px solid #0aa0fa;
+  border: 1.2px solid #0aa0fa;
   border-radius: 10px;
   padding: 1rem;
   margin-bottom: 1.5rem;
@@ -299,7 +299,7 @@ html {
 }
 
 .skill-item {
-  border: 2px solid #0aa0fa;
+  border: 1.2px solid #0aa0fa;
   border-radius: 10px;
   padding: 1rem;
   background-color: #111;
