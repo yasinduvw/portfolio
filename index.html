@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/images/Portfolio_Logo.png">
-</head>
+  <!-- Add Font Awesome CDN link -->
 <body>
   <header>
     <div class="logo">
@@ -25,7 +25,7 @@
     </button>
     <nav class="nav-links">
       <a href="#about">About Me</a>
-      <a href="#about">Education</a>
+      <a href="#education">Education</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
@@ -58,14 +58,110 @@
       </div>
     </section>
 
+    <section id="education">
+      <h2>Education</h2>
+      
+      <h3>Higher Education</h3>
+      <div class="education-block">
+        <p><strong>2025</strong></p>
+        <p><b>BSc. (Hons) Computer Science</b> (Results Pending) Completed final year</p>
+        <p>Informatics Institute of Technology (Colombo-04) | Affiliated with University of Westminster (Westminster, UK)</p>
+      </div>
+
+      <h3>Primary Education</h3>
+      <div class="education-block">
+        <p><strong>2012-2019</strong></p>
+        <p><b>G.C.E. O/L (2016)</b> Results: 8As 1C</p>
+        <p><b>G.C.E. A/L (2019)</b> Results: 2Cs 1S</p>
+        <p>Mahanama College (Colombo-03)</p>
+      </div>
+      <div class="education-block">
+        <p><strong>2005-2012</strong></p>
+        <p>Sussex College (Nugegoda)</p>
+      </div>
+    </section>
+
     <section id="skills">
       <h2>Skills</h2>
-      <ul>
-        <li>Languages: JavaScript, Python, C++, Java</li>
-        <li>Web: HTML, CSS, React, Node.js</li>
-        <li>Tools: Git, Docker, Linux, Firebase</li>
-        <li>Other: Machine Learning, Cybersecurity, Game Development (Unreal/Unity)</li>
-      </ul>
+      
+      <!-- Programming -->
+      <div class="skills-category">
+        <h3>Programming</h3>
+        <div class="skills-block">
+          <div class="skill-item">
+            <img src="assets/images/java-icon.png" alt="Java Icon">
+            <p>Java</p>
+          </div>
+          <div class="skill-item">
+            <img src="assets/images/python-icon.png" alt="Python Icon">
+            <p>Python</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game Design & Development -->
+      <div class="skills-category">
+        <h3>Game Design & Development</h3>
+        <div class="skills-block">
+          <div class="skill-item">
+            <img src="assets/images/unity-icon.png" alt="Unity Icon">
+            <p>Unity</p>
+          </div>
+          <div class="skill-item">
+            <img src="assets/images/unreal-icon.png" alt="Unreal Engine Icon">
+            <p>Unreal Engine</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game Programming -->
+      <div class="skills-category">
+        <h3>Game Programming</h3>
+        <div class="skills-block">
+          <div class="skill-item">
+            <img src="assets/images/csharp-icon.png" alt="C# Icon">
+            <p>C#</p>
+          </div>
+          <div class="skill-item">
+            <img src="assets/images/cpp-icon.png" alt="C++ Icon">
+            <p>C++</p>
+          </div>
+          <div class="skill-item">
+            <img src="assets/images/blueprints-icon.png" alt="Blueprints Icon">
+            <p>Blueprints</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web Design & Development -->
+      <div class="skills-category">
+        <h3>Web Design and Development</h3>
+        <div class="skills-block">
+          <div class="skill-item">
+            <img src="assets/images/html-icon.png" alt="HTML Icon">
+            <p>HTML</p>
+          </div>
+          <div class="skill-item">
+            <img src="assets/images/css-icon.png" alt="CSS Icon">
+            <p>CSS</p>
+          </div>
+          <div class="skill-item">
+            <img src="assets/images/javascript-icon.png" alt="JavaScript Icon">
+            <p>JavaScript</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Database Management -->
+      <div class="skills-category">
+        <h3>Database Management</h3>
+        <div class="skills-block">
+          <div class="skill-item">
+            <img src="assets/images/mysql-icon.png" alt="MySQL Icon">
+            <p>MySQL</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="experience">
@@ -89,7 +185,7 @@
 
   <footer>
     <!-- <p>&copy; 2025 Yasindu Weerathunga</p> -->
-    <h3 id="contact">Contact me</h3>
+    <h2 id="contact">Contact me</h2>
     <div class="social-links">
       <!-- Email -->
       <a href="mailto:yasinduvw@gmail.com" target="_blank" aria-label="Email" rel="noopener noreferrer">
