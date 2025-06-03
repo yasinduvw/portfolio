@@ -61,7 +61,6 @@ nav a:hover {
   display: flex;
   gap: 10px;
   align-items: center;
-  margin-right: 10px;
 }
 
 .nav-links a {
