@@ -109,6 +109,7 @@ h2:not(#contact)::after {
 
 h3 {
   color: #0aa0fa;
+  margin-top: 2rem;
 }
 
 ul {
@@ -323,9 +324,9 @@ html {
 }
 
 .experience-block h3 {
-  color: #0aa0fa; /* Highlight period in blue */
-  margin-top: 0.5rem;
+  color: #0aa0fa;
   margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .experience-block p {
@@ -382,16 +383,15 @@ html {
 .project-block {
   border: 1.2px solid #0aa0fa;
   border-radius: 10px;
-  margin-top: 2.5rem; /* Add gap above the block */
+  padding: 1rem;
   margin-bottom: 1.5rem;
   background-color: #111; /* Slightly darker background for contrast */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
-  padding: 1rem;
 }
 
-.project-block h3 {
+.project-category h3 {
   color: #0aa0fa; /* Highlight project name in blue */
-  margin-top: 0.5rem;
+  margin-top: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
