@@ -445,6 +445,31 @@ html {
 @media (max-width: 768px) {
   .hamburger {
     display: block; /* Show only on mobile */
+    width: 24px; /* Reduce width */
+    height: 20px; /* Reduce height */
+  }
+
+  .hamburger span {
+    height: 3px; /*thickness */
+  }
+
+  .logo {
+    height: 50px; /*logo size */
+    width: 50px;
+  }
+
+  .logo img {
+    height: 50px; /* Logo image size */
+    width: 50px;
+  }
+
+  .name {
+    font-size: 1.5rem; /* text size */
+    line-height: 1.2; /* line height */
+  }
+
+  .name span {
+    font-size: 1.3rem; /* Further reduce text size */
   }
 
   .logo-block {
