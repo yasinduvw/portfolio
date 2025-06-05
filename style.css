@@ -508,30 +508,30 @@ html {
 
   /* Adjust font sizes for mobile */
   body {
-    font-size: 14px; /* Reduce base font size */
+    font-size: 12px; /* Further reduce base font size */
   }
 
   h1 {
-    font-size: 1.8rem; /* Adjust heading size */
+    font-size: 1.5rem; /* Adjust heading size */
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .cv-button, .button {
-    font-size: 0.8rem; /* Adjust button text size */
+    font-size: 0.7rem; /* Adjust button text size */
   }
 
   .skill-item p {
-    font-size: 0.8rem; /* Adjust skill item text size */
+    font-size: 0.7rem; /* Adjust skill item text size */
   }
 }
