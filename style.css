@@ -446,7 +446,7 @@ html {
   .hamburger {
     display: block; /* Show only on mobile */
     width: 24px; /* Reduce width */
-    height: 20px; /* Reduce height */
+    height: 23px; /* Reduce height */
   }
 
   .hamburger span {
