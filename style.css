@@ -447,7 +447,7 @@ html {
     display: block; /* Show only on mobile */
   }
 
-  .logo-block{
+  .logo-block {
     display: flex;
     width: 75%;
     align-items: center;
@@ -466,7 +466,7 @@ html {
     transition: right 0.3s ease-in-out;
     z-index: 1000;
     display: flex;
-    box-shadow: -5px 0 15px rgba(0,0,0,0.2); /* Add shadow for better visibility */
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
   }
 
   .nav-links.open {
@@ -495,14 +495,43 @@ html {
   .about-container {
     flex-direction: column;
   }
-  
+
   .about-image {
     align-self: center;
     margin-top: 1rem;
   }
-  
+
   .portrait {
     width: 85vw; /* 85% of viewport width */
     height: auto;
+  }
+
+  /* Adjust font sizes for mobile */
+  body {
+    font-size: 14px; /* Reduce base font size */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Adjust heading size */
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .cv-button, .button {
+    font-size: 0.8rem; /* Adjust button text size */
+  }
+
+  .skill-item p {
+    font-size: 0.8rem; /* Adjust skill item text size */
   }
 }
