@@ -534,4 +534,8 @@ html {
   .skill-item p {
     font-size: 0.7rem; /* Adjust skill item text size */
   }
+
+  .skill-item {
+    width: 100px; /* Adjust skill item width */
+  }
 }
