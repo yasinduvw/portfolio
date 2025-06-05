@@ -563,4 +563,9 @@ html {
   .skill-item {
     width: 100px; /* Adjust skill item width */
   }
+
+  .skill-item img {
+    width: 30px; /* Skill item width */
+    height: 30px;; /* Skill item height */
+  }
 }
